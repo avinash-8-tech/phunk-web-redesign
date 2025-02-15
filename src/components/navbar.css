@@ -1,0 +1,89 @@
+* {
+  color: #ffffff;
+}
+@font-face {
+  font-family: first;
+  src: url(/assets/fonts/first.woff2);
+}
+@font-face {
+  font-family: second;
+  src: url(/assets/fonts/second.woff2);
+}
+@font-face {
+  font-family: third;
+  src: url(/assets/fonts/third.woff2);
+}
+@font-face {
+  font-family: fourth;
+  src: url(/assets/fonts/fourth.woff2);
+}
+@font-face {
+  font-family: fifth;
+  src: url(/assets/fonts/fifth.woff2);
+}
+.navParent {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 0px;
+}
+.logo {
+  display: flex;
+  align-items: center;
+}
+.logo h1 {
+  font-size: 25px;
+  font-family: first;
+}
+.bars {
+  cursor: pointer;
+  border-bottom: 0.1px solid rgba(255, 255, 255, 0.301);
+  padding: 0px 40px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.bars h2 {
+  font-family: first;
+  font-size: 16px;
+  transition: 0.1s linear;
+}
+.bars h2:hover {
+  color: #ffffff85;
+  transition: 0.1s linear;
+}
+.talk {
+  display: flex;
+  align-items: center;
+}
+img {
+  height: 70px;
+}
+.talk {
+  display: flex;
+  align-items: center;
+}
+.talk button {
+  margin-top: -10px;
+  padding: 10px 30px;
+  background: linear-gradient(90deg, #2598f9, #2454f8);
+  margin-right: 20px;
+  border-radius: 50px;
+  font-family: second;
+  font-size: 15px;
+  border-top: 0.1px solid white;
+  border-left: 0.1px solid white;
+  border-right: 0.1px solid white;
+  border-bottom: 0px;
+  transition: 0.1s linear;
+  cursor: pointer;
+}
+.talk button:hover {
+  transition: 0.1s linear;
+  filter: brightness(130%);
+}
+@media (max-width: 850px) {
+  .bars {
+    display: none;
+  }
+}

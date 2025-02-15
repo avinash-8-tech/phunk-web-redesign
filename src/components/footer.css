@@ -1,0 +1,85 @@
+/* Footer Container */
+.footerParent {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    color: #fff;
+    padding: 50px 100px;
+    text-align: left;
+    margin-top: 300px;
+    font-family: first;
+}
+
+/* Footer Columns */
+.footerParent div {
+    flex: 1;
+    min-width: 200px;
+    margin-bottom: 20px;
+}
+
+/* Footer Headings */
+.footerParent h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* Footer Links */
+.footerParent p {
+    font-size: 1rem;
+    color: #bbb;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+}
+
+.footerParent .head{
+    color: #24a9f3;
+}
+
+.footerParent p:hover {
+    color: #fff;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .footerParent {
+        padding: 40px 50px;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footerParent div {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .footerParent {
+        padding: 30px 20px;
+    }
+
+    .footerParent h2 {
+        font-size: 1.5rem;
+    }
+
+    .footerParent p {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .footerParent {
+        padding: 20px 15px;
+    }
+
+    .footerParent h2 {
+        font-size: 1.3rem;
+    }
+
+    .footerParent p {
+        font-size: 0.85rem;
+    }
+}

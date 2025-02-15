@@ -1,0 +1,324 @@
+@font-face {
+  font-family: first;
+  src: url(/assets/fonts/first.woff2);
+}
+@font-face {
+  font-family: second;
+  src: url(/assets/fonts/second.woff2);
+}
+@font-face {
+  font-family: third;
+  src: url(/assets/fonts/third.woff2);
+}
+@font-face {
+  font-family: fourth;
+  src: url(/assets/fonts/fourth.woff2);
+}
+@font-face {
+  font-family: fifth;
+  src: url(/assets/fonts/fifth.woff2);
+}
+
+.featuresSec {
+  width: 100%;
+  margin-top: 140px;
+  text-align: center;
+}
+
+.featuresSec h1{
+    font-family: third;
+    font-size: 50px;
+    font-weight: 400;
+}
+
+.featuresSec h1 span{
+  background: linear-gradient(90deg, #09cadb, #1e8ff1);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 200;
+  font-family: fourth;
+}
+
+.cardParent{
+  height: 100%;
+  display: flex;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.cardParent .card{
+  cursor: pointer;
+  border-radius: 40px;
+  overflow: hidden;
+  margin: 50px;
+  width: 50%;
+  backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(20, 20, 20, 0.75);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    border: none;
+    transition: 0.2s;
+}
+
+.card:hover{
+  filter: brightness(150%);
+  transition: 0.4s linear;
+}
+
+.card span {
+  float: left;
+  margin-top: 10px;
+  margin-left: 30px;
+  font-size: 6rem;
+  background: transparent;
+  font-family: fourth;
+  color: #0000;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #969696;
+}
+
+.card span h1{
+  background: transparent;
+  margin-top: 130px;
+  margin-left: -120px;
+  background: linear-gradient(90deg, #09cadb, #1e8ff1);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-stroke-color: transparent;
+  font-family: third;
+}
+
+.card p{
+  background: transparent;
+  margin-top: 240px;
+  padding-left: 40px;
+  padding-right: 80px;
+  text-align: left;
+  font-family: first;
+  color: #8c8c8c;
+}
+
+.card img{
+  height: 280px;
+  border-radius: 20px;
+  margin-top: 30px;
+}
+
+.card .cardImg2{
+  margin-top: 50px;
+}
+
+.card .card2Pera{
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.card .det{
+  margin-left: 15px;
+}
+
+.btn2{
+  background: #ffffff;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-stroke-color: transparent;
+}
+
+@media (max-width: 1300px){
+  .card img{
+    height: 200px;
+  }
+  .featuresSec h1 {
+    font-size: 30px;
+  }
+  .card h1{
+    font-size: 40px;
+  }
+  .card p{
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 1150px){
+  .cardParent{
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .card img{
+    height: 200px;
+  }
+  .featuresSec h1 {
+    font-size: 30px;
+  }
+  .card h1{
+    font-size: 40px;
+  }
+  .card p{
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 1000px){
+  .cardParent{
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .card img{
+    height: 180px;
+  }
+  .featuresSec h1 {
+    font-size: 40px;
+  }
+  .card h1{
+    font-size: 30px;
+  }
+  .card p{
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 880px){
+  .cardParent{
+    padding-left: 0;
+    padding-right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .card{
+    width: 90%;
+    margin: 20px 0;
+  }
+  
+  .card p{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media (max-width: 695px) {
+  .cardParent {
+    padding-left: 0;
+    padding-right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  .card img {
+    width: 90%;
+    height: auto;
+  }
+
+  .featuresSec h1 {
+    font-size: 24px;
+  }
+
+  .card h1 {
+    font-size: 22px;
+  }
+
+  .card .card2Pera,
+  .card p {
+    font-size: 12px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .card span {
+    font-size: 4rem;
+    margin-bottom: 0;
+  }
+
+  .card span h1{
+    margin-left: -90px;
+  }
+
+  .card .det h1{
+    margin-left: -90px;
+  }
+
+}
+
+.card{
+  animation: animate 5s ease-in-out infinite;
+}
+
+@keyframes animate{
+  0%{
+    transform: translateY(0);
+  }
+  50%{
+    transform: translateY(-0.5rem);
+  }
+  100%{
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 480px) {
+  .featuresSec h1 {
+    font-size: 20px;
+  }
+
+  .cardParent {
+    padding-left: 0;
+    padding-right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+  }
+
+  .card {
+    width: 100%;
+    margin: 10px 0;
+    height: auto;
+  }
+
+  .card img {
+    width: 90%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+
+  .card h1 {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .card .card2Pera,
+  .card p {
+    font-size: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  .card span {
+    font-size: 3rem;
+    margin-bottom: 5px;
+    text-align: center;
+  }
+
+  .det h1{
+    margin-left: 100px;
+  }
+
+  button {
+    font-size: 13px;
+    padding: 8px 14px;
+    width: 50%;
+  }
+}
